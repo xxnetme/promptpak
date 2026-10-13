@@ -1,0 +1,49 @@
+{
+  "name": "promptpak",
+  "version": "1.0.0",
+  "description": "Fast, zero-dependency codebase packager for LLMs with directory tree generation",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "promptpak": "./bin/promptpak.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxnetme/promptpak.git"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "claude",
+    "chatgpt",
+    "context",
+    "prompt-engineering",
+    "cli",
+    "codebase-to-prompt",
+    "repomix"
+  ],
+  "author": "xxnetme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxnetme/promptpak/issues"
+  },
+  "homepage": "https://github.com/xxnetme/promptpak#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
